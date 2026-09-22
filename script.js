@@ -1,60 +1,55 @@
-(() => {
-  "use strict";
-  const WA = "523423432324";
+const WA_NUMBER = "523423432324";
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
-  // Año dinámico
-  const y = document.getElementById("year");
-  if (y) y.textContent = String(new Date().getFullYear());
+$("#year").textContent = new Date().getFullYear();
 
-  // Menú móvil
-  const burger = document.getElementById("burger");
-  const mobileNav = document.getElementById("mobileNav");
-  if (burger && mobileNav) {
-    burger.addEventListener("click", () => {
-      const open = mobileNav.classList.toggle("open");
-      burger.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-    mobileNav.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => mobileNav.classList.remove("open"))
-    );
-  }
+// Menu móvil
+const btn = $("#menuBtn"), nav = $("#nav");
+btn.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+$$("#nav a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
-  // Reveal on scroll
-  const io = new IntersectionObserver(
-    (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
-    { threshold: 0.12 }
-  );
-  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-
-  // Filtro de catálogo
-  const chips = document.querySelectorAll(".chip");
-  const cards = document.querySelectorAll("#productGrid .card");
-  chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      chips.forEach((c) => c.classList.remove("active"));
-      chip.classList.add("active");
-      const f = chip.dataset.filter;
-      cards.forEach((card) => {
-        const cats = (card.dataset.cat || "").split(" ");
-        card.style.display = f === "all" || cats.includes(f) ? "" : "none";
-      });
-    });
+// Filtros catálogo
+$$(".chip").forEach(chip => chip.addEventListener("click", () => {
+  $$(".chip").forEach(c => c.classList.remove("active"));
+  chip.classList.add("active");
+  const f = chip.dataset.filter;
+  $$("#productGrid .product").forEach(card => {
+    card.style.display = (f === "all" || card.dataset.cat === f) ? "" : "none";
   });
+}));
 
-  // Formulario -> WhatsApp (no guarda datos en el sitio)
-  const form = document.getElementById("leadForm");
-  if (form) {
-    form.addEventListener("submit", (ev) => {
-      ev.preventDefault();
-      const nombre = document.getElementById("fNombre").value.trim();
-      const interes = document.getElementById("fInteres").value.trim();
-      const tel = document.getElementById("fTel").value.trim();
-      const msg =
-        "Hola Tech Nova, soy " + nombre +
-        ". Me interesa: " + interes +
-        (tel ? ". Mi tel: " + tel : "") +
-        ". ¿Me ayudas con cotización?";
-      window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
-    });
-  }
-})();
+// Botones con mensaje prellenado
+$$("[data-wa]").forEach(a => {
+  const msg = a.getAttribute("data-wa");
+  a.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+});
+
+// Cotizador
+$("#waForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const cat = $("#waCat").value;
+  const msg = $("#waMsg").value.trim();
+  const text = `Hola Tech Nova, busco (${cat}): ${msg || "quiero asesoría"}`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+});
+
+// Form contacto -> WhatsApp
+$("#leadForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("#leadName").value.trim();
+  const want = $("#leadWant").value.trim();
+  const text = `Hola Tech Nova, soy ${name}. Me interesa: ${want}. ¿Me ayudas?`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+});
+
+// Reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); }
+}), { threshold: 0.12 });
+$$(".card, .photo-card, .steps li, .wa-box, .widget-card, .store-info").forEach(el => {
+  el.classList.add("reveal"); io.observe(el);
+});
