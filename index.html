@@ -1,549 +1,364 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tienda Tech Nova — Tienda de tecnología y gadgets en Monterrey. Smartphones, laptops, audio, gaming y accesorios. Cotiza hoy por WhatsApp.">
-  <title>Tienda Tech Nova | Tecnología y Gadgets en Monterrey</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda Tech Nova | Tecnología premium en Monterrey</title>
+<meta name="description" content="Tienda Tech Nova en Monterrey: smartphones, laptops, audio, wearables y accesorios. Venta por WhatsApp, asesoría experta y garantía. Lun a Sáb 10:00 a 20:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Saltar al contenido</a>
 
-  <header class="site-header" id="header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Tienda Tech Nova — inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5c-1.5 0-2 1-2 2 0 1.2.5 2 2 3 .1.1.1.2 0 .3-1.5 1-2 1.8-2 3 0 1 .5 2 2 2"/><path d="M9 7h.01"/><path d="M10.5 5c.7.6 1 2.8 1 7s-.3 6.4-1 7c-.6-.6-1-2.8-1-7s.4-6.4 1-7Z"/><path d="M19 14.5c1.5 0 2-1 2-2 0-1.2-.5-2-2-3-.1-.1-.1-.2 0-.3 1.5-1 2-1.8 2-3 0-1-.5-2-2-2"/><path d="M14 9h.01"/><path d="M14.5 8c.7-.6 1-2.8 1-7s-.3-6.4-1-7c-.6.6-1 2.8-1 7s.4 6.4 1 7Z"/></svg>
-        </span>
-        <span class="brand-text">
-          <strong>Tienda&nbsp;Tech&nbsp;Nova</strong>
-          <small>Tecnología y gadgets · Monterrey</small>
-        </span>
-      </a>
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="topbar-item"><i class="dot"></i> Monterrey · Lunes a sábado de 10:00 a 20:00</span>
+    <a class="topbar-item topbar-link" href="tel:+523423432324" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Tel: 342 343 2324</a>
+    <a class="topbar-item topbar-link accent" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20asesor%C3%ADa%20para%20comprar%20tecnolog%C3%ADa" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Vender por WhatsApp</a>
+  </div>
+</div>
 
-      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#inicio" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-          <li><a href="#categorias" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Categorías</a></li>
-          <li><a href="#destacados" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Destacados</a></li>
-          <li><a href="#galeria" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Galería</a></li>
-          <li><a href="#ubicacion" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
-          <li><a href="#cotizacion" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Cotizar</a></li>
-        </ul>
-        <a class="btn btn-whatsapp btn-small header-cta" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, quiero información sobre sus productos." data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-          WhatsApp
-        </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav" data-eb-editable="link" data-eb-key="index.button.10" data-eb-role="button" data-eb-kind="link">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
+<header class="header" id="inicio">
+  <div class="wrap header-in">
+    <a class="brand" href="#inicio" aria-label="Tienda Tech Nova inicio" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">
+      <span class="brand-mark" aria-hidden="true">TN</span>
+      <span class="brand-txt">Tienda <strong>Tech Nova</strong><small>Tecnología · Monterrey</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#catalogo" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Catálogo</a>
+      <a href="#tienda" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Tienda</a>
+      <a href="#servicios" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Servicios</a>
+      <a href="#comprar" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Cómo comprar</a>
+      <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+      <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">Contacto</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-wa" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20cotizar%20un%20equipo" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.10" data-eb-role="a" data-eb-kind="link">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.11" data-eb-role="button" data-eb-kind="link"><span></span><span></span><span></span></button>
     </div>
-  </header>
+  </div>
+  <div class="wrap mobile-nav" id="mobileNav">
+    <a href="#catalogo" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Catálogo</a>
+    <a href="#tienda" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Tienda</a>
+    <a href="#servicios" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Servicios</a>
+    <a href="#comprar" data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link">Cómo comprar</a>
+    <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.16" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+    <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.17" data-eb-role="a" data-eb-kind="link">Contacto</a>
+  </div>
+</header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-bg" aria-hidden="true">
-        <img src="assets/pasillo-plaza-tecnologia.jpg" alt="" data-eb-editable="image" data-eb-key="index.img.11" data-eb-role="img" data-eb-kind="image">
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Corporativo premium · Alto contraste · Monterrey</p>
+      <h1 data-eb-editable="text" data-eb-key="index.h1.19" data-eb-role="h1" data-eb-kind="text">Todo tu mundo <span class="grad">tech</span> en un solo lugar.</h1>
+      <p class="lead" data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Smartphones, laptops, audio, wearables y accesorios originales con asesoría real, garantía y venta directa por WhatsApp con seguimiento de tu pedido.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20comprar%20por%20WhatsApp" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.21" data-eb-role="a" data-eb-kind="link">Comprar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#catalogo" data-eb-editable="link" data-eb-key="index.a.22" data-eb-role="a" data-eb-kind="link">Ver catálogo</a>
       </div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-
-      <div class="container hero-inner">
-        <p class="eyebrow reveal" data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">
-          <span class="dot"></span> Tienda de tecnología · Monterrey, NL
-        </p>
-        <h1 class="reveal" data-eb-editable="text" data-eb-key="index.h1.13" data-eb-role="h1" data-eb-kind="text">Tecnología y gadgets para <span class="grad">impulsar tu día a día</span></h1>
-        <p class="hero-sub reveal" data-eb-editable="text" data-eb-key="index.p.14" data-eb-role="p" data-eb-kind="text">
-          Smartphones, laptops, audio, gaming y accesorios con atención personalizada,
-          precios competitivos y entrega en Monterrey. Cotiza en minutos por WhatsApp.
-        </p>
-        <div class="hero-actions reveal">
-          <a class="btn btn-whatsapp btn-lg" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, me interesa cotizar un producto." data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-            Cotizar por WhatsApp
-          </a>
-          <a class="btn btn-ghost btn-lg" href="#categorias" data-eb-editable="link" data-eb-key="index.a.16" data-eb-role="a" data-eb-kind="link">Explorar categorías
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-          </a>
-        </div>
-
-        <ul class="hero-stats reveal">
-          <li>
-            <strong data-count="2016">2016</strong>
-            <span>Años de experiencia</span>
-          </li>
-          <li>
-            <strong data-count="1000" data-suffix="+">1000+</strong>
-            <span>Clientes atendidos</span>
-          </li>
-          <li>
-            <strong data-count="480" data-suffix="+">480+</strong>
-            <span>Entregas realizadas</span>
-          </li>
-          <li>
-            <strong data-count="24" data-suffix="/7">24/7</strong>
-            <span>Cotización por WhatsApp</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hero-scroll" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <div class="marquee marquee-top" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Smartphones</span><i>✦</i><span>Laptops y PC</span><i>✦</i><span>Audio y sonido</span><i>✦</i><span>Gaming</span><i>✦</i><span>Accesorios</span><i>✦</i><span>Hogar inteligente</span><i>✦</i>
-        <span>Smartphones</span><i>✦</i><span>Laptops y PC</span><i>✦</i><span>Audio y sonido</span><i>✦</i><span>Gaming</span><i>✦</i><span>Accesorios</span><i>✦</i><span>Hogar inteligente</span><i>✦</i>
-      </div>
+      <ul class="hero-meta">
+        <li><strong>+2,400</strong><span>equipos entregados</span></li>
+        <li><strong>12 meses</strong><span>garantía en equipos</span></li>
+        <li><strong>Same-day</strong><span>entrega en Monterrey</span></li>
+      </ul>
+      <p class="hero-note" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Lun a Sáb 10:00–20:00 · Tel 342 343 2324 · <a href="https://facebook.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.24" data-eb-role="a" data-eb-kind="link">Facebook</a> · <a href="https://instagram.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.25" data-eb-role="a" data-eb-kind="link">Instagram</a></p>
     </div>
+    <figure class="hero-media reveal">
+      <img src="https://images.pexels.com/photos/11297769/pexels-photo-11297769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero principal tienda de tecnología premium" loading="eager" fetchpriority="high" data-eb-editable="image" data-eb-key="index.img.26" data-eb-role="img" data-eb-kind="image">
+      <figcaption class="hero-card">
+        <strong>Oferta Nova</strong>
+        <span>Audífonos + funda + mica en tu primera compra por WhatsApp.</span>
+        <a href="https://wa.me/523423432324?text=Hola%2C%20quiero%20la%20Oferta%20Nova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.27" data-eb-role="a" data-eb-kind="link">Reclamar →</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="wrap trustbar reveal">
+    <span>Garantía escrita</span><i>·</i><span>Equipos sellados</span><i>·</i><span>Pagos seguros</span><i>·</i><span>Soporte postventa</span><i>·</i><span>CRM con seguimiento</span>
+  </div>
+</section>
 
-    <section class="pillars" aria-label="Por qué elegirnos">
-      <div class="container pillars-grid">
-        <article class="pillar reveal">
-          <span class="pillar-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.17" data-eb-role="h3" data-eb-kind="text">Atención personalizada</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Te asesoramos para elegir el equipo ideal según tu presupuesto y uso. Sin tecnicismos innecesarios.</p>
-        </article>
-        <article class="pillar reveal">
-          <span class="pillar-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.19" data-eb-role="h3" data-eb-kind="text">Precios competitivos</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Cotizamos en minutos por WhatsApp, comparamos opciones y te ofrecemos el mejor valor por tu dinero.</p>
-        </article>
-        <article class="pillar reveal">
-          <span class="pillar-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Disponibles de 10 a 20 h</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Atención presencial y por chat de lunes a sábado. Agenda tu visita o recibe tu pedido en Monterrey.</p>
-        </article>
-        <article class="pillar reveal">
-          <span class="pillar-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          </span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.23" data-eb-role="h3" data-eb-kind="text">Base en Monterrey</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.24" data-eb-role="p" data-eb-kind="text">Tienda y entregas locales. Consulta disponibilidad y tiempos de entrega directamente por WhatsApp.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="categorias">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text"><span class="dot"></span> Catálogo</p>
-          <h2 data-eb-editable="text" data-eb-key="index.h2.26" data-eb-role="h2" data-eb-kind="text">Lo que encuentras <span class="grad">en Tienda Tech Nova</span></h2>
-          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.27" data-eb-role="p" data-eb-kind="text">No vemos lo que buscas en la lista. Escríbenos: si existe en el mercado, lo conseguimos.</p>
-        </div>
-
-        <div class="cat-grid">
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">Smartphones</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Celulares de gama de entrada y media, con garantía y asesoría para elegir el mejor.</p>
-          </article>
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.30" data-eb-role="h3" data-eb-kind="text">Laptops y PC</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Equipos para estudio, oficina y creativos. Te armamos la mejor propuesta por presupuesto.</p>
-          </article>
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.32" data-eb-role="h3" data-eb-kind="text">Audio y sonido</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.33" data-eb-role="p" data-eb-kind="text">Auriculares, bocinas y soundbars para música, llamadas y entretenimiento.</p>
-          </article>
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4M8 9v4"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.6c-.02.2-.02.4-.02.6 0 4.2 3.35 7.6 7.55 7.6h1.54l4.9 3v-3.6c1.18-.55 2.14-1.8 2.33-3.18.03-.24.05-.48.05-.72a4 4 0 0 0-3.73-3.7Z"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.34" data-eb-role="h3" data-eb-kind="text">Gaming</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">Controles, headsets, periféricos y accesorios para que tu setup rinda al máximo.</p>
-          </article>
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h.01M12 15h.01M9 13h.01M15 13h.01"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.36" data-eb-role="h3" data-eb-kind="text">Accesorios</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.37" data-eb-role="p" data-eb-kind="text">Cargadores, cables, fundas, baterías portátiles y todo lo necesario para tu equipo.</p>
-          </article>
-          <article class="cat-card reveal">
-            <span class="cat-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M12 5c1.2 2.5 1.2 3.5 0 6-1.2-2.5-1.2-3.5 0-6ZM8 6.5c1.2 2 1.2 3 0 5S5 9 5 7s1.8-2 3-.5ZM16 6.5c-1.2 2-1.2 3 0 5s3-2.5 3-4-1.8-2-3-.5Z"/><path d="M12 8v12"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.38" data-eb-role="h3" data-eb-kind="text">Hogar inteligente</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Lámparas, asistentes, cámaras y dispositivos para conectar tu casa paso a paso.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="featured" id="destacados">
-      <div class="container">
-        <div class="section-head light reveal">
-          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.40" data-eb-role="p" data-eb-kind="text"><span class="dot"></span> Destacados</p>
-          <h2 data-eb-editable="text" data-eb-key="index.h2.41" data-eb-role="h2" data-eb-kind="text">Productos y servicios <span class="grad">más buscados</span></h2>
-          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.42" data-eb-role="p" data-eb-kind="text">Tan pronto abramos tu chat guardamos tu interés para darte la mejor cotización.</p>
-        </div>
-
-        <div class="prod-grid home">
-          <article class="prod-card reveal">
-            <div class="prod-media">
-              <img src="assets/entrega-dispositivos.jpg" alt="Entrega de dispositivos de Tienda Tech Nova" loading="lazy" data-eb-editable="image" data-eb-key="index.img.43" data-eb-role="img" data-eb-kind="image">
-              <span class="badge badge-hot">Más pedido</span>
-            </div>
-            <div class="prod-body">
-              <p class="prod-cat" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Servicio</p>
-              <h3 data-eb-editable="text" data-eb-key="index.h3.45" data-eb-role="h3" data-eb-kind="text">Entrega y envío de equipos</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Coordinamos la entrega de tus dispositivos en Monterrey. Consulta tiempas y cobertura.</p>
-              <a class="btn btn-whatsapp btn-block" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, quiero cotizar el servicio de entrega de equipos." data-eb-editable="link" data-eb-key="index.a.47" data-eb-role="a" data-eb-kind="link">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-                Cotizar por WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card reveal">
-            <div class="prod-media">
-              <img src="assets/mitateca.jpg" alt="Equipo tecnológico disponible en Tienda Tech Nova" loading="lazy" data-eb-editable="image" data-eb-key="index.img.48" data-eb-role="img" data-eb-kind="image">
-              <span class="badge badge-new">Nuevo ingreso</span>
-            </div>
-            <div class="prod-body">
-              <p class="prod-cat" data-eb-editable="text" data-eb-key="index.p.49" data-eb-role="p" data-eb-kind="text">Tecnología</p>
-              <h3 data-eb-editable="text" data-eb-key="index.h3.50" data-eb-role="h3" data-eb-kind="text">Gadgets y dispositivos</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Línea actualizada de gadgets con asesoría previa a la compra y soporte para configurarlos.</p>
-              <a class="btn btn-whatsapp btn-block" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, quiero cotizar gadgets y dispositivos." data-eb-editable="link" data-eb-key="index.a.52" data-eb-role="a" data-eb-kind="link">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-                Cotizar por WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card reveal">
-            <div class="prod-media">
-              <img src="assets/iphone-dia-de-innovadores.jpg" alt="Innovación tecnológica en productos para iPhone" loading="lazy" data-eb-editable="image" data-eb-key="index.img.53" data-eb-role="img" data-eb-kind="image">
-              <span class="badge badge-news">Tendencias</span>
-            </div>
-            <div class="prod-body">
-              <p class="prod-cat" data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Móviles</p>
-              <h3 data-eb-editable="text" data-eb-key="index.h3.55" data-eb-role="h3" data-eb-kind="text">Innovación en móviles</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">Seguimos las novedades del mercado para que tengas acceso a lo último en tecnología móvil.</p>
-              <a class="btn btn-whatsapp btn-block" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, quiero cotizar equipo de tecnología móvil." data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-                Cotizar por WhatsApp
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <div class="featured-note reveal">
-          <p data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-            ¿Buscas un modelo o accesorio específico? Escríbenos y lo conseguimos.
-          </p>
-          <a class="btn btn-ghost-light" href="#cotizacion" data-wa-pretext="Hola Tienda Tech Nova, estoy buscando un producto específico:" data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">
-            Preguntar disponibilidad
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <div class="marquee marquee-alt" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Cotización rápida</span><i>✦</i><span>Entrega en Monterrey</span><i>✦</i><span>Atención de 10 a 20 h</span><i>✦</i><span>Atención por WhatsApp</span><i>✦</i><span>Garantía y soporte</span><i>✦</i>
-        <span>Cotización rápida</span><i>✦</i><span>Entrega en Monterrey</span><i>✦</i><span>Atención de 10 a 20 h</span><i>✦</i><span>Atención por WhatsApp</span><i>✦</i><span>Garantía y soporte</span><i>✦</i>
-      </div>
+<!-- CATALOGO -->
+<section class="section" id="catalogo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Catálogo</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.29" data-eb-role="h2" data-eb-kind="text">Lo más buscado esta semana</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.30" data-eb-role="p" data-eb-kind="text">Filtra por categoría y pide cotización inmediata por WhatsApp. Te registramos en nuestro CRM para darte seguimiento sin que repitas tus datos.</p>
     </div>
-
-    <section class="section" id="galeria">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text"><span class="dot"></span> Galería</p>
-          <h2 data-eb-editable="text" data-eb-key="index.h2.61" data-eb-role="h2" data-eb-kind="text">Así trabajamos, <span class="grad">momento a momento</span></h2>
-          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.62" data-eb-role="p" data-eb-kind="text">Un vistazo a nuestro día a día, equipo e instalaciones.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-tall reveal">
-            <img src="assets/pasillo-plaza-tecnologia.jpg" alt="Pasillo de la zona de tecnología donde se ubica la tienda" loading="lazy" data-eb-editable="image" data-eb-key="index.img.63" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>Nuestro espacio</span></figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <img src="assets/entrega-dispositivos.jpg" alt="Entrega de dispositivos a cliente" loading="lazy" data-eb-editable="image" data-eb-key="index.img.64" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>Entrega de equipos</span></figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <img src="assets/kofotecnologia.jpg" alt="Tecnología y gadgets a la venta" loading="lazy" data-eb-editable="image" data-eb-key="index.img.65" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>Gadgets disponibles</span></figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <img src="assets/mitateca.jpg" alt="Producto tecnológico en la tienda" loading="lazy" data-eb-editable="image" data-eb-key="index.img.66" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>En mostrador</span></figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <img src="assets/iphone-dia-de-innovadores.jpg" alt="Innovación tecnológica del día del lanzamiento" loading="lazy" data-eb-editable="image" data-eb-key="index.img.67" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>Innovación móvil</span></figcaption>
-          </figure>
-          <figure class="gallery-item gallery-wide reveal">
-            <img src="assets/murmullos-newyork.jpg" alt="Impresión y contenido de la galería de la tienda" loading="lazy" data-eb-editable="image" data-eb-key="index.img.68" data-eb-role="img" data-eb-kind="image">
-            <figcaption><span>Colección e impresiones</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="cotizacion" id="cotizacion">
-      <div class="container cotizacion-grid">
-        <div class="cotizacion-info reveal">
-          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.69" data-eb-role="p" data-eb-kind="text"><span class="dot"></span> Cotiza sin filas</p>
-          <h2 data-eb-editable="text" data-eb-key="index.h2.70" data-eb-role="h2" data-eb-kind="text">Quiero una cotización</h2>
-          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">
-            Déjanos tus datos, te contactamos por WhatsApp con la mejor opción según lo que buscas.
-          </p>
-          <ul class="cotizacion-points">
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              Respuesta en minutos en horario de atención
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              Tu mensaje llega directo a nuestra tienda
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-              Sin compromiso: cotizar no te obliga a comprar
-            </li>
-          </ul>
-          <a class="btn btn-whatsapp btn-lg" href="tel:+523423432324" aria-label="Llamar al 342 343 2324" data-eb-editable="link" data-eb-key="index.a.72" data-eb-role="a" data-eb-kind="link">
-            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-            Llamar a la tienda
-          </a>
-        </div>
-
-        <div class="lead-panel reveal">
-          <form id="leadForm" class="lead-form" novalidate>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.73" data-eb-role="h3" data-eb-kind="text">Pide tu cotización</h3>
-
-            <div class="field">
-              <label for="leadName">Nombre</label>
-              <input type="text" id="leadName" name="name" placeholder="Tu nombre" autocomplete="name" required>
-            </div>
-
-            <div class="field">
-              <label for="leadPhone">WhatsApp / Teléfono</label>
-              <input type="tel" id="leadPhone" name="phone" placeholder="10 dígitos, ej. 3423432324" inputmode="tel" autocomplete="tel" required>
-            </div>
-
-            <div class="field">
-              <label for="leadProduct">¿Qué te interesa?</label>
-              <select id="leadProduct" name="product" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option>Smartphones</option>
-                <option>Laptops y PC</option>
-                <option>Audio y sonido</option>
-                <option>Gaming</option>
-                <option>Accesorios</option>
-                <option>Hogar inteligente</option>
-                <option>Otro / no sé</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="leadMsg">Mensaje (opcional)</label>
-              <textarea id="leadMsg" name="message" rows="3" placeholder="Modelo, presupuesto, pregunta..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-whatsapp btn-block btn-lg" data-eb-editable="link" data-eb-key="index.button.74" data-eb-role="button" data-eb-kind="link">
-              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-              Enviar cotización por WhatsApp
-            </button>
-
-            <p class="form-note" id="leadResult" role="status" aria-live="polite" data-eb-editable="text" data-eb-key="index.p.75" data-eb-role="p" data-eb-kind="text"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ubicacion">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.76" data-eb-role="p" data-eb-kind="text"><span class="dot"></span> Visítanos</p>
-          <h2 data-eb-editable="text" data-eb-key="index.h2.77" data-eb-role="h2" data-eb-kind="text">Encuéntranos en <span class="grad">Monterrey</span></h2>
-        </div>
-
-        <div class="map-wrap reveal">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60080.29249353073!2d-89.95960567229005!3d19.754377909211858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f57e530bd60abf9%3A0xc1f5251d7481d%"
-            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa de ubicación de Tienda Tech Nova"></iframe>
-        </div>
-
-        <div class="info-band">
-          <div class="info-card reveal">
-            <span class="info-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.78" data-eb-role="h3" data-eb-kind="text">Horario</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.79" data-eb-role="p" data-eb-kind="text">Lunes a sábado<br>10:00 a 20:00</p>
-          </div>
-          <div class="info-card reveal">
-            <span class="info-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.80" data-eb-role="h3" data-eb-kind="text">Teléfono</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.81" data-eb-role="p" data-eb-kind="text"><a href="tel:+523423432324" data-eb-editable="link" data-eb-key="index.a.82" data-eb-role="a" data-eb-kind="link">342 343 2324</a><br>WhatsApp disponible</p>
-          </div>
-          <div class="info-card reveal">
-            <span class="info-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.83" data-eb-role="h3" data-eb-kind="text">Ubicación</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.84" data-eb-role="p" data-eb-kind="text">Monterrey, NL<br>A consulta por WhatsApp</p>
-          </div>
-          <div class="info-card reveal">
-            <span class="info-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
-            </span>
-            <h3 data-eb-editable="text" data-eb-key="index.h3.85" data-eb-role="h3" data-eb-kind="text">Síguenos</h3>
-            <p class="social-row" data-eb-editable="text" data-eb-key="index.p.86" data-eb-role="p" data-eb-kind="text">
-              <a href="https://facebook.com/tiendatechnova" target="_blank" rel="noopener" aria-label="Facebook de Tienda Tech Nova" data-eb-editable="link" data-eb-key="index.a.87" data-eb-role="a" data-eb-kind="link">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
-              </a>
-              <a href="https://instagram.com/tiendatechnova" target="_blank" rel="noopener" aria-label="Instagram de Tienda Tech Nova" data-eb-editable="link" data-eb-key="index.a.88" data-eb-role="a" data-eb-kind="link">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="#inicio" data-eb-editable="link" data-eb-key="index.a.89" data-eb-role="a" data-eb-kind="link">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5c-1.5 0-2 1-2 2 0 1.2.5 2 2 3 .1.1.1.2 0 .3-1.5 1-2 1.8-2 3 0 1 .5 2 2 2"/><path d="M9 7h.01"/><path d="M10.5 5c.7.6 1 2.8 1 7s-.3 6.4-1 7c-.6-.6-1-2.8-1-7s.4-6.4 1-7Z"/><path d="M19 14.5c1.5 0 2-1 2-2 0-1.2-.5-2-2-3-.1-.1-.1-.2 0-.3 1.5-1 2-1.8 2-3 0-1-.5-2-2-2"/><path d="M14 9h.01"/><path d="M14.5 8c.7-.6 1-2.8 1-7s-.3-6.4-1-7c-.6.6-1 2.8-1 7s.4 6.4 1 7Z"/></svg>
-          </span>
-          <span class="brand-text">
-            <strong>Tienda Tech Nova</strong>
-            <small>Tecnología y gadgets</small>
-          </span>
-        </a>
-        <p data-eb-editable="text" data-eb-key="index.p.90" data-eb-role="p" data-eb-kind="text">Tienda de tecnología y gadgets en Monterrey. Cotizamos rápido por WhatsApp y cuidamos cada entrega.</p>
-        <div class="social-row social-row-sm">
-          <a href="https://facebook.com/tiendatechnova" target="_blank" rel="noopener" aria-label="Facebook" data-eb-editable="link" data-eb-key="index.a.91" data-eb-role="a" data-eb-kind="link">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
-          </a>
-          <a href="https://instagram.com/tiendatechnova" target="_blank" rel="noopener" aria-label="Instagram" data-eb-editable="link" data-eb-key="index.a.92" data-eb-role="a" data-eb-kind="link">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-          </a>
-          <a href="https://wa.me/523423432324" target="_blank" rel="noopener" aria-label="WhatsApp" data-eb-editable="link" data-eb-key="index.a.93" data-eb-role="a" data-eb-kind="link">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <nav class="footer-nav" aria-label="Enlaces del sitio">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.94" data-eb-role="h3" data-eb-kind="text">Navegación</h3>
-        <ul>
-          <li><a href="#inicio" data-eb-editable="link" data-eb-key="index.a.95" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-          <li><a href="#categorias" data-eb-editable="link" data-eb-key="index.a.96" data-eb-role="a" data-eb-kind="link">Categorías</a></li>
-          <li><a href="#destacados" data-eb-editable="link" data-eb-key="index.a.97" data-eb-role="a" data-eb-kind="link">Destacados</a></li>
-          <li><a href="#galeria" data-eb-editable="link" data-eb-key="index.a.98" data-eb-role="a" data-eb-kind="link">Galería</a></li>
-          <li><a href="#ubicacion" data-eb-editable="link" data-eb-key="index.a.99" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
-          <li><a href="#cotizacion" data-eb-editable="link" data-eb-key="index.a.100" data-eb-role="a" data-eb-kind="link">Cotizar</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer-contact">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.101" data-eb-role="h3" data-eb-kind="text">Contacto</h3>
-        <ul>
-          <li>
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-            <a href="tel:+523423432324" data-eb-editable="link" data-eb-key="index.a.102" data-eb-role="a" data-eb-kind="link">342 343 2324</a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Monterrey, NL
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            Lun a sáb · 10:00 a 20:00
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-crm">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.103" data-eb-role="h3" data-eb-kind="text">Para la tienda</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.104" data-eb-role="p" data-eb-kind="text">Consulta los prospectos registrados desde el sitio.</p>
-        <button class="btn btn-ghost btn-small" id="openCrmBtn" type="button" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.105" data-eb-role="button" data-eb-kind="link">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
-          Panel de gestión (CRM)
-        </button>
-      </div>
+    <div class="filters reveal" role="tablist" aria-label="Filtrar productos">
+      <button class="chip active" data-filter="all" data-eb-editable="link" data-eb-key="index.button.31" data-eb-role="button" data-eb-kind="link">Todo</button>
+      <button class="chip" data-filter="smartphones" data-eb-editable="link" data-eb-key="index.button.32" data-eb-role="button" data-eb-kind="link">Smartphones</button>
+      <button class="chip" data-filter="computo" data-eb-editable="link" data-eb-key="index.button.33" data-eb-role="button" data-eb-kind="link">Laptops</button>
+      <button class="chip" data-filter="audio" data-eb-editable="link" data-eb-key="index.button.34" data-eb-role="button" data-eb-kind="link">Audio</button>
+      <button class="chip" data-filter="wearables" data-eb-editable="link" data-eb-key="index.button.35" data-eb-role="button" data-eb-kind="link">Wearables</button>
+      <button class="chip" data-filter="accesorios" data-eb-editable="link" data-eb-key="index.button.36" data-eb-role="button" data-eb-kind="link">Accesorios</button>
     </div>
+    <div class="cards" id="productGrid">
 
-    <div class="footer-bottom">
-      <div class="container">
-        <p data-eb-editable="text" data-eb-key="index.p.106" data-eb-role="p" data-eb-kind="text">© <span id="year">2026</span> Tienda Tech Nova · Monterrey · Hecho con tecnología</p>
-      </div>
-    </div>
-  </footer>
-
-  <a class="wa-float" href="https://wa.me/523423432324?text=Hola%20Tienda%20Tech%20Nova%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos." target="_blank" rel="noopener" aria-label="Abrir WhatsApp" data-eb-editable="link" data-eb-key="index.a.107" data-eb-role="a" data-eb-kind="link">
-    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.29Z"/></svg>
-  </a>
-
-  <div class="modal" id="crmModal" role="dialog" aria-modal="true" aria-labelledby="crmTitle" hidden>
-    <div class="modal-backdrop" data-close-crm></div>
-    <div class="modal-card">
-      <div class="modal-head">
-        <h2 id="crmTitle" data-eb-editable="text" data-eb-key="index.h2.108" data-eb-role="h2" data-eb-kind="text">Panel de gestión de prospectos</h2>
-        <button class="modal-close" type="button" data-close-crm aria-label="Cerrar panel" data-eb-editable="link" data-eb-key="index.button.109" data-eb-role="button" data-eb-kind="link">✕</button>
-      </div>
-
-      <div class="crm-login" id="crmLogin">
-        <p data-eb-editable="text" data-eb-key="index.p.110" data-eb-role="p" data-eb-kind="text">Ingresa la clave para ver los prospectos registrados. Está definida en <code>app.js</code>.</p>
-        <form id="crmLoginForm">
-          <div class="field">
-            <label for="crmPin">Clave</label>
-            <input type="password" id="crmPin" inputmode="numeric" autocomplete="off" required>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" data-eb-editable="link" data-eb-key="index.button.111" data-eb-role="button" data-eb-kind="link">Ingresar</button>
-          <p class="form-note" id="crmLoginMsg" role="status" aria-live="polite" data-eb-editable="text" data-eb-key="index.p.112" data-eb-role="p" data-eb-kind="text"></p>
-        </form>
-      </div>
-
-      <div class="crm-view" id="crmView" hidden>
-        <div class="crm-toolbar">
-          <span id="crmCount" class="crm-count">0 prospectos</span>
-          <div>
-            <button type="button" class="btn btn-ghost btn-small" id="crmExport" data-eb-editable="link" data-eb-key="index.button.113" data-eb-role="button" data-eb-kind="link">Exportar CSV</button>
-            <button type="button" class="btn btn-ghost btn-small" id="crmClear" data-eb-editable="link" data-eb-key="index.button.114" data-eb-role="button" data-eb-kind="link">Vaciar</button>
-          </div>
+      <article class="card reveal" data-cat="smartphones">
+        <div class="card-media"><img src="https://images.pexels.com/photos/5741605/pexels-photo-5741605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smartphones en exhibición" loading="lazy" data-eb-editable="image" data-eb-key="index.img.37" data-eb-role="img" data-eb-kind="image"><span class="tag">Top ventas</span></div>
+        <div class="card-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.38" data-eb-role="h3" data-eb-kind="text">Smartphones última generación</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Gama media y alta, liberados, con mica y funda de regalo. Activación y migración de datos incluida.</p>
+          <ul class="specs"><li>128–512 GB</li><li>Liberados</li><li>12 meses garantía</li></ul>
+          <div class="card-foot"><span class="price">Desde $4,999</span><a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20me%20interesa%20un%20smartphone" data-eb-editable="link" data-eb-key="index.a.40" data-eb-role="a" data-eb-kind="link">Cotizar</a></div>
         </div>
-        <div class="crm-list" id="crmList" role="list"></div>
+      </article>
+
+      <article class="card reveal" data-cat="computo">
+        <div class="card-media"><img src="https://images.pexels.com/photos/25809255/pexels-photo-25809255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Laptops y computadoras" loading="lazy" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image"><span class="tag tag-cyan">Estudio y trabajo</span></div>
+        <div class="card-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.42" data-eb-role="h3" data-eb-kind="text">Laptops y cómputo</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.43" data-eb-role="p" data-eb-kind="text">Equipos para escuela, oficina y gaming. Instalamos paquetería, antivirus y respaldo inicial.</p>
+          <ul class="specs"><li>SSD + 8/16 GB RAM</li><li>Office configurado</li><li>Soporte 90 días</li></ul>
+          <div class="card-foot"><span class="price">Desde $8,499</span><a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20busco%20una%20laptop" data-eb-editable="link" data-eb-key="index.a.44" data-eb-role="a" data-eb-kind="link">Cotizar</a></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="audio">
+        <div class="card-media"><img src="https://images.pexels.com/photos/30981655/pexels-photo-30981655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Audífonos y audio" loading="lazy" data-eb-editable="image" data-eb-key="index.img.45" data-eb-role="img" data-eb-kind="image"><span class="tag">Sonido pro</span></div>
+        <div class="card-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.46" data-eb-role="h3" data-eb-kind="text">Audio y audífonos</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.47" data-eb-role="p" data-eb-kind="text">Earbuds, headsets gamer y bocinas portátiles con prueba de sonido en tienda antes de comprar.</p>
+          <ul class="specs"><li>Bluetooth 5.3</li><li>Cancelación de ruido</li><li>Prueba en tienda</li></ul>
+          <div class="card-foot"><span class="price">Desde $649</span><a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20quiero%20aud%C3%ADfonos" data-eb-editable="link" data-eb-key="index.a.48" data-eb-role="a" data-eb-kind="link">Cotizar</a></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="wearables">
+        <div class="card-media"><img src="https://images.pexels.com/photos/6956992/pexels-photo-6956992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smartwatch y wearables" loading="lazy" data-eb-editable="image" data-eb-key="index.img.49" data-eb-role="img" data-eb-kind="image"><span class="tag tag-cyan">Salud + deporte</span></div>
+        <div class="card-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.50" data-eb-role="h3" data-eb-kind="text">Smartwatch y wearables</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Relojes inteligentes, bandas y monitoreo de salud sincronizado con tu celular iOS o Android.</p>
+          <ul class="specs"><li>GPS + ritmo cardiaco</li><li>iOS / Android</li><li>Correas extra</li></ul>
+          <div class="card-foot"><span class="price">Desde $1,199</span><a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20busco%20un%20smartwatch" data-eb-editable="link" data-eb-key="index.a.52" data-eb-role="a" data-eb-kind="link">Cotizar</a></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="accesorios">
+        <div class="card-media"><img src="https://images.pexels.com/photos/5208870/pexels-photo-5208870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Accesorios y gadgets" loading="lazy" data-eb-editable="image" data-eb-key="index.img.53" data-eb-role="img" data-eb-kind="image"><span class="tag">Imprescindibles</span></div>
+        <div class="card-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.54" data-eb-role="h3" data-eb-kind="text">Accesorios y gadgets</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.55" data-eb-role="p" data-eb-kind="text">Cargadores turbo, teclados, mouse, fundas, micas, cables y todo para equipar tu setup.</p>
+          <ul class="specs"><li>Carga rápida</li><li>Originales</li><li>Instalación gratis</li></ul>
+          <div class="card-foot"><span class="price">Desde $149</span><a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20quiero%20accesorios" data-eb-editable="link" data-eb-key="index.a.56" data-eb-role="a" data-eb-kind="link">Cotizar</a></div>
+        </div>
+      </article>
+
+      <article class="card card-cta reveal" data-cat="smartphones computo audio wearables accesorios">
+        <div class="card-body cta-body">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.57" data-eb-role="h3" data-eb-kind="text">¿No ves lo que buscas?</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Conseguimos el modelo exacto sobre pedido en 24–72 h. Mándanos marca y presupuesto.</p>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20busco%20un%20modelo%20sobre%20pedido" data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">Pedir sobre pedido</a>
+          <small>Respuesta promedio: 15 min en horario de tienda.</small>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIENDA -->
+<section class="section section-dark" id="tienda">
+  <div class="wrap split">
+    <figure class="split-media reveal">
+      <img src="https://images.pexels.com/photos/17565491/pexels-photo-17565491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Interior tienda física en Monterrey" loading="lazy" data-eb-editable="image" data-eb-key="index.img.60" data-eb-role="img" data-eb-kind="image">
+      <figcaption>Nuestra tienda física en Monterrey · prueba todo antes de pagar.</figcaption>
+    </figure>
+    <div class="split-copy reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.61" data-eb-role="p" data-eb-kind="text">La tienda</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.62" data-eb-role="h2" data-eb-kind="text">Ven, prueba y compara. Sin presión.</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">En Tech Nova puedes tocar, probar y comparar cada equipo con asesoría honesta. Si algo no te conviene, te lo decimos. Así de simple.</p>
+      <ul class="checklist">
+        <li><strong>Zona de prueba libre:</strong> smartphones, audio y wearables conectados para que los cales.</li>
+        <li><strong>Asesoría por perfil:</strong> estudiante, gamer, creador o negocio — te armamos el combo ideal.</li>
+        <li><strong>Traspaso de datos:</strong> dejamos tu equipo nuevo igual que el anterior, sin costo.</li>
+        <li><strong>Meses sin intereses</strong> y apartado con el 20% de anticipo.</li>
+      </ul>
+      <div class="inline-actions">
+        <a class="btn btn-primary" href="https://wa.me/523423432324?text=Hola%2C%20quiero%20agendar%20visita%20a%20tienda" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.64" data-eb-role="a" data-eb-kind="link">Agendar visita</a>
+        <span class="hours">Lun a Sáb · 10:00–20:00 · Monterrey</span>
       </div>
     </div>
   </div>
+</section>
 
-  <script src="app.js"></script>
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.65" data-eb-role="p" data-eb-kind="text">Servicios</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.66" data-eb-role="h2" data-eb-kind="text">Más que una tienda: tu aliado tech</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.67" data-eb-role="p" data-eb-kind="text">Venta por WhatsApp con CRM: guardamos tu historial para que cada compra sea más rápida que la anterior.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="svc-num">01</span>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.68" data-eb-role="h3" data-eb-kind="text">Venta y asesoría WhatsApp</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.69" data-eb-role="p" data-eb-kind="text">Cotiza, aparta y paga desde tu celular. Te asignamos un asesor que da seguimiento a tu pedido.</p>
+        <img src="https://images.pexels.com/photos/12355752/pexels-photo-12355752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Venta por WhatsApp y atención CRM" loading="lazy" data-eb-editable="image" data-eb-key="index.img.70" data-eb-role="img" data-eb-kind="image">
+      </article>
+      <article class="svc reveal">
+        <span class="svc-num">02</span>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.71" data-eb-role="h3" data-eb-kind="text">Soporte y garantías</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.72" data-eb-role="p" data-eb-kind="text">Diagnóstico gratuito en compras de la casa, pólizas extendidas y centro de servicio certificado.</p>
+        <img src="https://images.pexels.com/photos/7709301/pexels-photo-7709301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mostrador de servicio y asesoría" loading="lazy" data-eb-editable="image" data-eb-key="index.img.73" data-eb-role="img" data-eb-kind="image">
+      </article>
+      <article class="svc reveal">
+        <span class="svc-num">03</span>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.74" data-eb-role="h3" data-eb-kind="text">Empresas y mayoreo</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.75" data-eb-role="p" data-eb-kind="text">Equipamos oficinas y negocios: cotizaciones formales, facturación, entregas por volumen y planes de renovación.</p>
+        <ul class="checklist mini">
+          <li>Facturación disponible</li>
+          <li>Descuento por volumen</li>
+          <li>Entrega programada</li>
+        </ul>
+        <a class="link-more" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%2C%20quiero%20cotizaci%C3%B3n%20empresarial" data-eb-editable="link" data-eb-key="index.a.76" data-eb-role="a" data-eb-kind="link">Cotizar para empresa →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMO COMPRAR -->
+<section class="section section-dark" id="comprar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker light" data-eb-editable="text" data-eb-key="index.p.77" data-eb-role="p" data-eb-kind="text">Cómo comprar</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.78" data-eb-role="h2" data-eb-kind="text">Compra en 4 pasos por WhatsApp</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.79" data-eb-role="p" data-eb-kind="text">Nuestro mini-CRM guarda tu nombre y tu historial para atenderte más rápido cada vez. Sin apps, sin registros eternos.</p>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><h3 data-eb-editable="text" data-eb-key="index.h3.80" data-eb-role="h3" data-eb-kind="text">Escríbenos</h3><p data-eb-editable="text" data-eb-key="index.p.81" data-eb-role="p" data-eb-kind="text">Toca cualquier botón de WhatsApp y cuéntanos qué buscas y tu presupuesto.</p></li>
+      <li class="reveal"><span>2</span><h3 data-eb-editable="text" data-eb-key="index.h3.82" data-eb-role="h3" data-eb-kind="text">Recibe opciones</h3><p data-eb-editable="text" data-eb-key="index.p.83" data-eb-role="p" data-eb-kind="text">Te mandamos fotos reales, precios y comparativa honesta en minutos.</p></li>
+      <li class="reveal"><span>3</span><h3 data-eb-editable="text" data-eb-key="index.h3.84" data-eb-role="h3" data-eb-kind="text">Aparta o paga</h3><p data-eb-editable="text" data-eb-key="index.p.85" data-eb-role="p" data-eb-kind="text">Aparta con anticipo, paga en tienda, por transferencia o con tarjeta.</p></li>
+      <li class="reveal"><span>4</span><h3 data-eb-editable="text" data-eb-key="index.h3.86" data-eb-role="h3" data-eb-kind="text">Recibe y califica</h3><p data-eb-editable="text" data-eb-key="index.p.87" data-eb-role="p" data-eb-kind="text">Entrega en tienda o a domicilio en Monterrey. Luego déjanos tu opinión abajo.</p></li>
+    </ol>
+    <div class="banner-wa reveal">
+      <div><h3 data-eb-editable="text" data-eb-key="index.h3.88" data-eb-role="h3" data-eb-kind="text">¿Listo para estrenar?</h3><p data-eb-editable="text" data-eb-key="index.p.89" data-eb-role="p" data-eb-kind="text">Escríbenos ahora: 342 343 2324 · Lun a Sáb 10:00–20:00</p></div>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20comprar%20ahora" data-eb-editable="link" data-eb-key="index.a.90" data-eb-role="a" data-eb-kind="link">Iniciar chat</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap split">
+    <div class="split-copy reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.91" data-eb-role="p" data-eb-kind="text">Dudas frecuentes</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.92" data-eb-role="h2" data-eb-kind="text">Preguntas que nos hacen todos los días</h2>
+      <div class="faq" id="faqList">
+        <details open><summary>¿Los equipos son originales y sellados?</summary><p data-eb-editable="text" data-eb-key="index.p.93" data-eb-role="p" data-eb-kind="text">Sí. Vendemos equipos nuevos, sellados y con garantía por escrito. Te mostramos el sellado al momento de la entrega.</p></details>
+        <details><summary>¿Hacen entregas a domicilio?</summary><p data-eb-editable="text" data-eb-key="index.p.94" data-eb-role="p" data-eb-kind="text">Sí, entrega el mismo día en Monterrey en compras confirmadas antes de las 17:00. Al resto del país por paquetería 24–72 h.</p></details>
+        <details><summary>¿Aceptan tarjetas y meses sin intereses?</summary><p data-eb-editable="text" data-eb-key="index.p.95" data-eb-role="p" data-eb-kind="text">Aceptamos débito, crédito, transferencia y efectivo. Meses sin intereses en tarjetas participantes y apartado con 20%.</p></details>
+        <details><summary>¿Cómo funciona el seguimiento CRM?</summary><p data-eb-editable="text" data-eb-key="index.p.96" data-eb-role="p" data-eb-kind="text">Cuando nos escribes por WhatsApp guardamos tu historial de compras y preferencias para cotizarte más rápido y avisarte de ofertas relevantes. Nunca compartimos tus datos.</p></details>
+      </div>
+    </div>
+    <figure class="split-media reveal">
+      <img src="https://images.pexels.com/photos/17565491/pexels-photo-17565491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Clientes probando gadgets" loading="lazy" data-eb-editable="image" data-eb-key="index.img.97" data-eb-role="img" data-eb-kind="image">
+      <figcaption>Clientes probando gadgets en zona demo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- OPINIONES / RESEÑAS -->
+<section class="section section-reviews" id="opiniones">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.98" data-eb-role="p" data-eb-kind="text">Opiniones verificadas</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.99" data-eb-role="h2" data-eb-kind="text">Experiencias de nuestros clientes</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.100" data-eb-role="p" data-eb-kind="text">Tu opinión construye confianza. Aquí puedes <strong>iniciar sesión con Google</strong>, guardar tu nombre, agregar un <strong>teléfono opcional y privado</strong>, <strong>calificar con estrellas</strong> y <strong>publicar tu comentario</strong>. Publicamos solo tu nombre — nunca tu teléfono.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <aside class="reviews-explain reveal">
+        <h3 data-eb-editable="text" data-eb-key="index.h3.101" data-eb-role="h3" data-eb-kind="text">¿Cómo funciona?</h3>
+        <ol>
+          <li><strong>Inicia sesión con Google</strong> desde el panel de tu cuenta.</li>
+          <li><strong>Guarda tu nombre</strong> y, si quieres, un teléfono opcional y privado para seguimiento.</li>
+          <li><strong>Elige tus estrellas</strong> y escribe tu experiencia con el equipo o el servicio.</li>
+          <li><strong>Publica.</strong> Podrás <strong>editar o eliminar</strong> tus propios comentarios cuando quieras.</li>
+          <li><strong>Cierra sesión</strong> cuando termines en un equipo compartido.</li>
+        </ol>
+        <div class="privacy-note">
+          <strong>Privacidad:</strong> mostramos públicamente solo el nombre del visitante, nunca su teléfono. Los comentarios pueden pasar por moderación antes de publicarse.
+        </div>
+        <div class="mini-stats">
+          <div><strong>4.9/5</strong><span>calificación promedio</span></div>
+          <div><strong>+380</strong><span>reseñas en tienda</span></div>
+          <div><strong>98%</strong><span>recomienda Tech Nova</span></div>
+        </div>
+      </aside>
+
+      <div class="reviews-widget reveal" data-itm-comments-shell>
+        <div class="widget-head">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.102" data-eb-role="h3" data-eb-kind="text">Deja tu reseña</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.103" data-eb-role="p" data-eb-kind="text">Inicia sesión, califica y comparte. Nos toma 1 minuto.</p>
+        </div>
+        <div class="profile-slot" data-itm-profile data-project-id="d855fd61-5fae-4fd2-ade2-b55a34cef45a"></div>
+        <div class="comments-slot" data-itm-comments data-project-id="d855fd61-5fae-4fd2-ade2-b55a34cef45a"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section section-dark" id="contacto">
+  <div class="wrap split">
+    <div class="split-copy reveal">
+      <p class="kicker light" data-eb-editable="text" data-eb-key="index.p.104" data-eb-role="p" data-eb-kind="text">Contacto</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.105" data-eb-role="h2" data-eb-kind="text">Visítanos o escríbenos hoy</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.106" data-eb-role="p" data-eb-kind="text">Monterrey · Lunes a sábado de 10:00 a 20:00. La forma más rápida de comprar es WhatsApp.</p>
+      <ul class="contact-list">
+        <li><strong>WhatsApp / Tel:</strong> <a href="https://wa.me/523423432324" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.107" data-eb-role="a" data-eb-kind="link">342 343 2324</a> · <a href="tel:+523423432324" data-eb-editable="link" data-eb-key="index.a.108" data-eb-role="a" data-eb-kind="link">llamar</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.109" data-eb-role="a" data-eb-kind="link">facebook.com/tiendatechnova</a></li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.110" data-eb-role="a" data-eb-kind="link">@tiendatechnova</a></li>
+        <li><strong>Horario:</strong> Lunes a sábado de 10:00 a 20:00</li>
+      </ul>
+      <div class="inline-actions">
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20informaci%C3%B3n" data-eb-editable="link" data-eb-key="index.a.111" data-eb-role="a" data-eb-kind="link">Escríbenos</a>
+        <a class="btn btn-ghost" href="#opiniones" data-eb-editable="link" data-eb-key="index.a.112" data-eb-role="a" data-eb-kind="link">Dejar opinión</a>
+      </div>
+    </div>
+    <form class="lead-form reveal" id="leadForm">
+      <h3 data-eb-editable="text" data-eb-key="index.h3.113" data-eb-role="h3" data-eb-kind="text">Pide tu cotización</h3>
+      <p data-eb-editable="text" data-eb-key="index.p.114" data-eb-role="p" data-eb-kind="text">Déjanos tus datos y te contactamos por WhatsApp en horario de tienda.</p>
+      <label>Nombre<input type="text" name="nombre" id="fNombre" placeholder="Tu nombre" required autocomplete="name"></label>
+      <label>¿Qué buscas?<input type="text" name="interes" id="fInteres" placeholder="Ej. iPhone, laptop gamer, audífonos…" required></label>
+      <label>Teléfono (opcional)<input type="tel" name="telefono" id="fTel" placeholder="81 0000 0000" autocomplete="tel"></label>
+      <button class="btn btn-primary" type="submit" data-eb-editable="link" data-eb-key="index.button.115" data-eb-role="button" data-eb-kind="link">Enviar por WhatsApp</button>
+      <small>Al enviar se abrirá WhatsApp con tu mensaje listo. No guardamos este formulario en el sitio.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <span class="brand-mark">TN</span>
+      <p data-eb-editable="text" data-eb-key="index.p.116" data-eb-role="p" data-eb-kind="text"><strong>Tienda Tech Nova</strong><br>Tienda de tecnología y gadgets · Monterrey<br>Lun a Sáb 10:00–20:00 · 342 343 2324</p>
+    </div>
+    <nav aria-label="Links">
+      <a href="#catalogo" data-eb-editable="link" data-eb-key="index.a.117" data-eb-role="a" data-eb-kind="link">Catálogo</a><a href="#tienda" data-eb-editable="link" data-eb-key="index.a.118" data-eb-role="a" data-eb-kind="link">Tienda</a><a href="#servicios" data-eb-editable="link" data-eb-key="index.a.119" data-eb-role="a" data-eb-kind="link">Servicios</a><a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.120" data-eb-role="a" data-eb-kind="link">Opiniones</a><a href="#contacto" data-eb-editable="link" data-eb-key="index.a.121" data-eb-role="a" data-eb-kind="link">Contacto</a>
+    </nav>
+    <div class="foot-social">
+      <a href="https://facebook.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.122" data-eb-role="a" data-eb-kind="link">Facebook</a>
+      <a href="https://instagram.com/tiendatechnova" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.123" data-eb-role="a" data-eb-kind="link">Instagram</a>
+      <a href="https://wa.me/523423432324" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.124" data-eb-role="a" data-eb-kind="link">WhatsApp</a>
+    </div>
+  </div>
+  <div class="wrap foot-base"><span>© <span id="year">2026</span> Tienda Tech Nova · Monterrey</span><span>Fotos: Pexels · Licencia Pexels</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/523423432324?text=Hola%20Tech%20Nova%2C%20quiero%20asesor%C3%ADa" target="_blank" rel="noopener" aria-label="Chat WhatsApp" data-eb-editable="link" data-eb-key="index.a.125" data-eb-role="a" data-eb-kind="link">WA</a>
+
+<script src="script.js"></script>
+<script src="https://itm-void-excepcional.pages.dev/comments.js" defer></script>
 </body>
 </html>
